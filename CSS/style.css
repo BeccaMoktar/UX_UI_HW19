@@ -1,0 +1,122 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content:center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+.header{
+    justify-content:space-evenly;
+    padding-top: 4%;
+    padding-right: 50%;
+
+}
+h1{
+    font-size: 30px;
+
+}
+
+.container {
+    width: 30%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: inline-block;
+}
+
+.flexChild{
+    background: black;
+}
+
+.myFavourites {
+    text-align: center;
+    background-color: #000000;
+    padding: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.flexChild {
+    width: 33%;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    
+    
+}
+
+.inline-block {
+    color: white;
+    display: inline-block;
+    vertical-align: bottom;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 20%; 
+    justify-content:space-evenly;
+    width: 100%;
+    
+}
+
+div.logo {
+    width: 23%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.info-item {
+    padding: 10px;
+}
+
+.myWork {
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+
+}
+.workGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.workItem {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.workItem img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .flexContainer {
+        flex-direction: column;
+    }
+
+    .flexChild {
+        width: 100%;
+    }
+
+    .workItem {
+        grid-area: myArea;
+    }
+
+    .workGrid {
+        grid-template-rows: 300px 300px 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: "myArea";
+    }
+  }
