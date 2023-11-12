@@ -1,122 +1,146 @@
 body {
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content:center;
-    height: 100vh;
     margin: 0;
-    padding: 0;
-
-}
-.header{
-    justify-content:space-evenly;
-    padding-top: 4%;
-    padding-right: 50%;
-
-}
-h1{
-    font-size: 30px;
-
-}
-
-.container {
-    width: 30%;
-    margin: 10px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    display: inline-block;
-}
-
-.flexChild{
-    background: black;
-}
-
-.myFavourites {
+    background-color: black;
+    font: white;
+  }
+  header {
+    background-color: black;
+    padding: 15px;
+    font: white;
+    font-family: 'Poppins', sans-serif;
+  
+  }
+  header ul {
+    float: right;
+    color: white;
+  }
+  .myFavourites {
     text-align: center;
     background-color: #000000;
     padding: 20px;
     color: white;
     font-family: 'Poppins', sans-serif;
-    font-size: 13px;
-}
-.flexContainer {
-    display: flex;
-    justify-content: space-between;
-}
-.flexChild {
-    width: 33%;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    
-    
-}
-
-.inline-block {
-    color: white;
-    display: inline-block;
-    vertical-align: bottom;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    margin-right: 20%; 
-    justify-content:space-evenly;
-    width: 100%;
-    
-}
-
-div.logo {
-    width: 23%;
-    padding-left: 20px;
-    padding-top: 20px;
-}
-
-.info-item {
-    padding: 10px;
-}
-
-.myWork {
-    text-align: center;
-    background-color: black;
-    padding: 20px;
-
-}
-.workGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-}
-.workItem {
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-.workItem img {
-    max-width: 100%;
-    height: auto;
-}
-
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-
-    .flexContainer {
-        flex-direction: column;
-    }
-
-    .flexChild {
-        width: 100%;
-    }
-
-    .workItem {
-        grid-area: myArea;
-    }
-
-    .workGrid {
-        grid-template-rows: 300px 300px 300px 300px 300px;
-        grid-template-columns: 1fr;
-        grid-template-areas: "myArea";
-    }
+    font-size: 18px;
   }
+  header li {
+    display: inline-block;
+    padding: 0px 5px;
+    font: white;
+  }
+  header p {
+    display: inline-block;
+    font:white;
+    font-family: 'Poppins', sans-serif;
+  
+  
+  }
+  .heroImg {
+    background-color: black;
+    padding: 100px 15px;
+  }
+  .content {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color:white;
+    text-align: center;
+    font:white;
+  }
+  button {
+    padding: 15px;
+    background-color: #ff8fb6;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    font:white;
+  }
+  footer {
+    background-color: #ffbcda;
+    padding: 5px;
+    color: black;
+    font: white;
+  
+  }
+  footer ul {
+    list-style: none;
+    padding-left: 5px;
+    font: white;
+  }
+  footer li {
+    display: inline-block;
+    padding: 0px 7px;
+    font: white;
+  }
+  .heading {
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 30px;
+    font: white;
+  }
+  .p{
+    font: white;
+  }
+  /* My UX Skills Section */
+  .flexContainer {
+    display: flex;
+    padding: 60px 30px;
+    font: white;
+  }
+  .flexContainer div {
+    width: 33%;
+    padding: 25px;
+    font: white;
+  }
+  .h3{
+    font: white;
+  }
+  .p{
+    font: white;
+  }
+  /* My Work Section */
+  .myWork {
+    padding: 10px 10px;
+    padding-top: 0;
+    background-color: black
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+  
+  }
+  .workGrid {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 350px 350px 350px;
+    grid-template-areas:
+    "img1 content1"
+    "img2 content2"
+    ;
+  }
+  .workGrid img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+  }
+  .img1 {
+    grid-area: img1;
+  }
+  .img2 {
+    grid-area: img2;
+  }
+  .img3 {
+    grid-area: img3;
+  }
+  .img1, .img2, .img3, .content1, .content2, .content3 {
+    padding: 80px;
+  }
+  .content1 {
+    grid-area: content1;
+  }
+  .content2 {
+    grid-area: content2;
+  }
+  .content3 {
+    grid-area: content3;
+  }
+  

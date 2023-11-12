@@ -1,25 +1,153 @@
 <!DOCTYPE html>
 <html>
+  <head>
 
-<head>
-    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+
+    <title>Homework 17 Solved</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100&display=swap"
+        rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <img src="images/LogoRM.png">
+      
+      <ul>
+        <li>ABOUT</li>
+        <li>SKILLS</li>
+        <li>WORK</li>
+        <li>CONTACT</li>
+        
+      </ul>
+    </header>
+    
+    <section class="heroImg">
+      <div class="content">
+        <img src="images/HeroI2.png">
+        <h1>Rebecca</h1>
+        <p> I'm a versatile content creator based in Toronto, Canada. By profession, I specialize in graphic design,
+          typography, art direction, photography, and UI design. My diverse skill set was honed during my academic
+          journey at Toronto Metropolitan and the University of Toronto. I've tackled a range of projects, from
+          editorial spreads to website wireframe prototyping, all while adapting and applying my creative
+          expertise.</p>
+        <button id="mydownloadButton">Download Resume</button>
+      </div>
+    </section>
+    
+ 
 
-    <title></title>
-</head>
 
-<body>
-    <header class="navigation">
+    <section class="myFavourites">
+    <h1>a few of my favourite things</h1>
+    <div class="flexContainer">
+        <div class="flexChild">
+            <img src="images/travel.png" alt="Skill 1 Icon">
+            <h3> Travelling</h3>
+            <p>By far one of my favourite hobbies (and the most expensive), but also so rewarding. Having
+                spent summers in Germany growing up, my love for traveling and experiencing new places and
+                cultures started at a young age.</p>
+        </div>
+        <div class="flexChild">
+            <img src="images/photography.png" alt="Skill 2 Icon">
+            <h3>Photography</h3>
+            <p>I love capturing moments and feelings on camera. I focus on editorial work, and particularly
+                love portraiture. I find capturing an individuals unique beauty is such a creative form of
+                storytelling..</p>
+        </div>
+        <div class="flexChild">
+            <img src="images/stayingactive.png" alt="Skill 3 Icon">
+            <h3>Staying Active</h3>
+            <p>I grew up as a dancer, I spent my winters on the slopes with my siblings and friends on our
+                boards, and transitioned into rep soccer in the summers. I still love being active just as
+                much now, as I did back then. </p>
+        </div>
+    </div>
 
-        <div class="logo">
-            <img src="images/LogoRM.png"/>
+
+
+
+
+    <h1 class="heading">My UX Skills</h1>
+    <section class="flexContainer">
+      <div>
+        <img src="images/QandA.png">
+        <h3>User Research</h3>
+        <p>User experience (UX) skills are a crucial aspect of my skillset. With a deep
+          understanding of user-centered design principles, I can create intuitive and engaging
+          digital interfaces that prioritize user satisfaction and accessibility. My proficiency
+          in conducting user research, usability testing, and wireframing enables me to design and
+          optimize websites and applications to meet the unique needs and preferences of diverse
+          user groups. I'm also adept at information architecture and interaction design, which
+          helps in crafting seamless and enjoyable user journeys. Overall, my UX skills empower me
+          to deliver exceptional digital experiences that leave a positive impact on users and
+          drive business success.</p>
+      </div>
+      <div>
+        <img src="images/magnifyingglass.png">
+        <h3>User Interface Design</h3>
+        <p>My user interface (UI) experience skills are a key asset in my toolkit. I have a
+          strong grasp of designing visually appealing and user-friendly interfaces that blend
+          aesthetics with functionality. Through a keen eye for detail, I can create
+          pixel-perfect layouts that ensure a consistent and cohesive user experience.
+          Proficient in UI design tools and best practices, I specialize in crafting
+          interactive elements, user flows, and intuitive navigation that enhance the overall
+          usability of digital products. With a focus on responsive and accessible design, I'm
+          dedicated to making sure that interfaces not only look great but also work
+          seamlessly across different devices and platforms. My UI experience skills are
+          instrumental in delivering polished and engaging user interfaces that leave a
+          lasting impression on users.</p>
+      </div>
+      <div>
+        <img src="images/graph.png">
+        <h3>Tools</h3>
+        <p>I am proficient in a range of powerful design and collaboration tools, including
+          Photoshop, InDesign, Illustrator, Figma, and Miro. With Photoshop, I excel in image
+          editing and manipulation, enabling me to create stunning visual assets and enhance
+          graphics. In InDesign, I craft professional and print-ready layouts, such as
+          brochures and documents. Illustrator allows me to create intricate vector graphics
+          and illustrations with precision and creativity. Figma serves as my go-to for UI/UX
+          design, offering real-time collaboration and responsive design capabilities. Miro is
+          my trusted platform for collaborative brainstorming, wireframing, and facilitating
+          efficient teamwork. These tools collectively empower me to bring my creative and
+          technical skills to life, producing high-quality design and collaborative outcomes.</p>
+      </div>
+    </section>
+
+    <section class="myWork">
+      <h1 class="heading">My Work</h1>
+      <div class="workGrid">
+        <div class="img1">
+          <img src="images/InvestU2.png">
+        </div>
+        <div class="content1">
+          <h4>InvestU</h4>
+          <p>Learn about investing the easy way!</p>
+          <button id="viewProjectButton">View Project</button>
+        </div>
+        <div class="img2">
+          <img src="images/ISC.png">
+        </div>
+        <div class="content2">
+          <h4>ISC Redesign</h4>
+          <p>Indiginous Services Canada website redesign.</p>
+          <button id="viewProjectButton2">View Project</button>
         </div>
 
-        <nav class="inline-block">
-            <a class="info-item" href="about"> About</a>
-            <a class="info-item" href="skills"> Skills</a>
-            <a class="info-item" href="work"> Work</a>
-            <a class="info-item" href="contact"> Content</a>
-        </nav>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li>about</li>
+        <li>skills</li>
+        <li>work</li>
+        <li>contact</li>
+      </ul>
+    </footer>
+  </body>
+  <script src="js/index.js"></script>
+</html>
