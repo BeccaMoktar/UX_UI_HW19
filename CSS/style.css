@@ -13,6 +13,8 @@ body {
   header ul {
     float: right;
     color: white;
+    justify-content: space-evenly;
+    padding-right: 10%;
   }
   .myFavourites {
     text-align: center;
@@ -36,26 +38,27 @@ body {
   }
   .heroImg {
     background-color: black;
-    padding: 100px 15px;
   }
   .content {
-    max-width: 500px;
     margin: 0 auto;
     padding: 50px;
     background-color:white;
     text-align: center;
     font:white;
+    font-family: 'Poppins', sans-serif;
   }
-  button {
+  .button {
     padding: 15px;
     background-color: #ff8fb6;
     color: white;
     font-size: 15px;
     border-radius: 4px;
     font:white;
+    font-family: 'Poppins', sans-serif;
   }
+
   footer {
-    background-color: #ffbcda;
+    background-color: white;
     padding: 5px;
     color: black;
     font: white;
